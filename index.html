@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form id="color-form">
+            <div>
+                <label for="color-picker">Color</label>
+                <input type="color" id="color-picker" name="color-picker">
+            </div>
+            <div>
+                <label for="mode-selector">Mode</label>
+                <select id="mode-selector" name="mode-selector">
+                    <option>monochrome</option>
+                    <option>monochrome-dark</option>
+                    <option>monochrome-light</option>
+                    <option>analogic</option>
+                    <option>complement</option>
+                    <option>analogic-complement</option>
+                    <option>triad</option>
+                    <option>quad</option>
+                </select>
+            </div>
+            <div>
+                <label for="count">Count</label>
+                <input id="get-count" type="number" value="5" min="2" max="100" name="count">
+            </div>
+            <button id="get-colors">Get Colors</button>
+        </form>
+        <!-- maybe have the divs added and removed but make them evenly width apart so you can have different amounts of them 
+         have 5 for now though-->
+        <main id="color-section"></main>
+    </body>
+    <script src="index.js"></script>
+</html>
